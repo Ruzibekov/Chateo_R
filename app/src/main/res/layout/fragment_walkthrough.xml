@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.WalkthroughFragment">
+    
+    <ImageView
+        android:id="@+id/iv_walkthrough"
+        android:layout_width="260dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/walkthrough_image"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        style="@style/TextView_Title"
+        android:layout_below="@id/iv_walkthrough"
+        android:layout_width="280dp"
+        android:text="@string/walkthourgh_text"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_walkthrough_start_messaging"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/mulish_bold"
+        android:text="@string/terms_privacy_policy"
+        android:textColor="@color/title_color"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_walkthrough_start_messaging"
+        style="@style/Button_ChatApp"
+        android:text="@string/start_messaging" />
+
+</RelativeLayout>

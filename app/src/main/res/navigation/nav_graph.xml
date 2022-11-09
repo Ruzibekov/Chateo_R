@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/walkthroughFragment">
+
+    <fragment
+        android:id="@+id/walkthroughFragment"
+        android:name="com.ruzibekov.chatapp_r.screen.WalkthroughFragment"
+        android:label="fragment_walkthrough"
+        tools:layout="@layout/fragment_walkthrough" >
+        <action
+            android:id="@+id/action_walkthroughFragment_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.ruzibekov.chatapp_r.screen.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+</navigation>

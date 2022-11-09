@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".screen.VerificationFragment">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/popbackstack"
+        android:padding="12dp"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        style="@style/TextView_Title"
+        android:text="@string/verification_title" />
+
+    <TextView
+        style="@style/TextView_Subtitle"
+        android:text="@string/verification_subtitle" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="8">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                app:cardCornerRadius="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_flag_uzb"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+
+            <!--            <com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--                android:layout_width="24dp"-->
+            <!--                android:layout_height="24dp" />-->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+998"
+                android:textAlignment="textEnd" />
+        </FrameLayout>
+
+        <EditText
+            style="@style/EditText_ChatApp"
+            android:id="@+id/et_verification_number"
+            android:layout_weight="2"
+            android:autofillHints="phone"
+            android:hint="@string/phone_number"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
