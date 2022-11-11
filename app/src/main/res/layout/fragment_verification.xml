@@ -20,6 +20,7 @@
 
     <TextView
         style="@style/TextView_Title"
+        android:layout_marginTop="80dp"
         android:text="@string/verification_title" />
 
     <TextView
@@ -31,17 +32,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="48dp"
         android:orientation="horizontal">
 
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
             android:layout_weight="8">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
                 app:cardCornerRadius="6dp">
 
                 <ImageView
@@ -51,30 +55,29 @@
                     tools:ignore="ContentDescription" />
             </androidx.cardview.widget.CardView>
 
-            <!--            <com.mikhaellopez.circularimageview.CircularImageView-->
-            <!--                android:layout_width="24dp"-->
-            <!--                android:layout_height="24dp" />-->
-
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="+998"
+                android:id="@+id/et_verification_code"
+                style="@style/EditText_ChatApp"
+                android:autofillHints="no"
+                android:inputType="phone"
+                android:text="@string/number_code_uzb"
                 android:textAlignment="textEnd" />
         </FrameLayout>
 
         <EditText
+            android:id="@+id/et_verification_phone_number"
             style="@style/EditText_ChatApp"
-            android:id="@+id/et_verification_number"
+            android:layout_marginStart="4dp"
             android:layout_weight="2"
             android:autofillHints="phone"
             android:hint="@string/phone_number"
-            android:inputType="phone"/>
-
+            android:inputType="phone" />
     </LinearLayout>
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="500dp"
-        android:layout_gravity="center" />
+        android:id="@+id/btn_verification"
+        style="@style/Button_ChatApp"
+        android:layout_marginTop="80dp"
+        android:text="@string/verification_continue" />
 
 </LinearLayout>

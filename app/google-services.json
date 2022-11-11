@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "40919815383",
+    "project_id": "chateo-r",
+    "storage_bucket": "chateo-r.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40919815383:android:c3e20774393532ee0c0c92",
+        "android_client_info": {
+          "package_name": "com.ruzibekov.chatapp_r"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40919815383-lrqdhjuahdf44m8nbfhhu0cucefv3udf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu6pxWQCcu2cmi5Qsfc6LP-3_OKXe9NxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40919815383-lrqdhjuahdf44m8nbfhhu0cucefv3udf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

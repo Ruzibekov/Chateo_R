@@ -19,4 +19,6 @@
     <string name="verification_title">Enter Your Phone Number</string>
     <string name="verification_subtitle">Please confirm your country code and enter your phone number</string>
     <string name="phone_number">Phone Number</string>
+    <string name="verification_continue">Continue</string>
+    <string name="number_code_uzb">+998</string>
 </resources>
